@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robrary AI Games Library</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace; /* Terminal/Code aesthetic */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        /* Typography & Glow Effects */
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+        }
+
+        p.subtitle {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            text-shadow: 0 0 2px #ffffff;
+        }
+
+        /* Game Cards Container */
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Game Card Styles */
+        .game-card {
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px #ffffff, inset 0 0 5px #ffffff;
+            background-color: rgba(255, 255, 255, 0.05); /* Slight transparency */
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .game-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px #ffffff;
+            text-align: center;
+        }
+
+        .play-btn {
+            padding: 0.8rem 2rem;
+            border: 1px solid #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            font-family: inherit;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 0 3px #ffffff;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .game-card:hover .play-btn {
+            background-color: #ffffff;
+            color: #000000;
+            box-shadow: 0 0 10px #ffffff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .game-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Robrary AI Games Library</h1>
+    <p class="subtitle">A collection of games built using modern AI codegen tools</p>
+
+    <div class="games-container">
+        <!-- Game 1: Snake -->
+        <a href="https://therobrary.github.io/jules-snake-game/" class="game-card">
+            <h2>Snake</h2>
+            <div class="play-btn">Play Game</div>
+        </a>
+
+        <!-- Game 2: Missile Defense -->
+        <a href="https://therobrary.github.io/jules-missiledefense-game/" class="game-card">
+            <h2>Missile Defense</h2>
+            <div class="play-btn">Play Game</div>
+        </a>
+
+        <!-- Game 3: Defender -->
+        <a href="https://therobrary.github.io/Jules-defender/" class="game-card">
+            <h2>Defender</h2>
+            <div class="play-btn">Play Game</div>
+        </a>
+    </div>
+
+</body>
+</html>
