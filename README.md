@@ -13,6 +13,7 @@ The library currently includes links to the following games:
 *   **Snake**
 *   **Missile Defense**
 *   **Defender**
+*   **Space Invader**
 
 ## Deployment
 
